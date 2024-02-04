@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora Idade</title>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <div class="input-box">
+                <label for="day">Dias</label>
+                <input type="number" name="day" placeholder="DD" id="day"><br />
+                <span class="field-error"></span>
+                <span id="day-error"></span>
+            </div>
+            <div class="input-box">
+                <label for="month">Meses</label>
+                <input type="number" name="month" placeholder="MM" id="month"><br />
+                <span class="field-error"></span>
+                <span id="month-error"></span>
+            </div>
+            <div class="input-box">
+                <label for="year">Anos</label>
+                <input type="number" name="year" placeholder="AAAA" id="year"><br />
+                <span class="field-error"></span>
+                <span id="year-error"></span>
+            </div>
+        </form>
+        <div class="img-box">
+            <hr />
+            <button type="button" class="button-submit">Calcular</button>
+            <hr class="mobile-line">
+        </div>
+        <div class="age-result">
+            <h1><span id="years-result">--</span> Anos</h1>
+            <h1><span id="months-result">--</span> Meses</h1>
+            <h1><span id="days-result">--</span> Dias</h1>
+        </div>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+        Coded by <a href="https://github.com/diegofranciscodasilva" target="_blank">Diego Francisco da Silva</a>
+      </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

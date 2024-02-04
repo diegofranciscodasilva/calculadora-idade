@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+*:focus {
+    outline: none;
+}
+
+main {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    margin: 8rem auto;
+    width: 280px;
+    border-radius: 15px 15px 100px 15px;
+}
+
+form {
+    display: flex;
+}
+
+.input-box {
+    margin-right: 2rem;
+}
+
+label {
+    color: #716f6f;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+input {
+    font-size: 20px;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    font-weight: 700;
+}
+
+input[type=number]:focus {
+    border: 1px solid #854dff;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=submit] {
+    display: none;
+}
+
+.field-error, #day-error, #month-error, #year-error {
+    font-size: 0.6rem;
+}
+
+span {
+    color: #854dff;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.button-submit {
+    background-color: #854dff;
+    color: #fff;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #716f6f;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    border: 2px solid #854dff;
+    background-color: #716f6f;
+    transition: all 0.3s ease;
+}
+
+hr {
+    border: 1px solid #dbdbdb;
+    width: 50%;
+}
+
+.age-result {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h1 {
+    margin: -1.5rem 0;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: #3e52a3;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: #854dff;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: 50%;
+        border-radius: 15px 15px 200px 15px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    input {
+        font-size: 30px;
+        width: 70%;
+    }    
+
+    .button-submit {
+        width: 100px;
+        height: 40px;
+    }
+
+    .mobile-line {
+        display: none;
+    }
+
+    .field-error, #day-error, #month-error, #year-error {
+        font-size: 0.8rem;
+    }    
+
+    .input-box {
+        margin-right: 0;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 5.2rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    main {
+        width: 60%;
+        border-radius: 15px 15px 150px 15px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
